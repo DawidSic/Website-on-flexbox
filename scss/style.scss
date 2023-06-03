@@ -47,7 +47,7 @@ body {
 
 	&__box {
 		position: relative;
-		width: 4rem;
+		width: 5rem;
 		height: 3rem;
 	}
 
@@ -354,8 +354,6 @@ body {
 			max-height: 300px;
 		}
 	}
-
-	
 }
 
 @media (min-width: 768px) {
@@ -388,21 +386,21 @@ body {
 			width: 70%;
 		}
 		&__text {
-            font-size: 2.2rem;
-        }
+			font-size: 2.2rem;
+		}
 	}
 	.islands {
-        &__cards {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
+		&__cards {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
 
-        &__card {
-            margin: 1em;
-            width: 45%;
-        }
-    }
+		&__card {
+			margin: 1em;
+			width: 45%;
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -445,24 +443,24 @@ body {
 		}
 	}
 	.hero-img {
-        padding: 40rem 2em;
-        background-image: c.$blue-gradient, url('../img/hero-big.jpg');
+		padding: 40rem 2em;
+		background-image: c.$blue-gradient, url('../img/hero-big.jpg');
 
-        &__title {
-            font-size: 7.2rem;
-        }
+		&__title {
+			font-size: 7.2rem;
+		}
 
-        hr {
-            width: 60%;
-            max-width: 900px;
-        }
-    }
+		hr {
+			width: 60%;
+			max-width: 900px;
+		}
+	}
 }
 
-@media(min-width: 1100px) {
-    .islands {
-        &__card {
-            width: 30%;
-        }
-    }
+@media (min-width: 1100px) {
+	.islands {
+		&__card {
+			width: 30%;
+		}
+	}
 }

@@ -116,7 +116,7 @@ body {
 }
 .burger-btn__box {
   position: relative;
-  width: 4rem;
+  width: 5rem;
   height: 3rem;
 }
 .burger-btn__bars, .burger-btn__bars::after, .burger-btn__bars::before {
