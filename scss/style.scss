@@ -21,6 +21,8 @@ body {
 	font-size: 1.6rem;
 }
 
+
+
 // NAV
 
 .burger-btn {
@@ -126,6 +128,12 @@ body {
 
 .nav-items-animation {
 	animation: navItemsAnimation 1s both;
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before{
+	background-color: c.$dark;
 }
 
 // HEADER
@@ -437,6 +445,106 @@ body {
 	}
 }
 
+//CONTACT
+
+.contact {
+	position: relative;
+	background-color: c.$light-white;
+	overflow: hidden;
+
+	.white-block-left {
+		background-color: c.$dark;
+	}
+
+	&__form,
+	&__form-top {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__form-label {
+		margin-bottom: 0.5em;
+		text-transform: uppercase;
+	}
+
+	&__form-input {
+		@include mix.contactFrom;
+	}
+	&__form-textarea {
+		@include mix.contactFrom;
+
+		max-width: 100%;
+		min-width: 100%;
+		width: 100%;
+		min-height: 150px;
+	}
+
+	&__form-btn {
+		align-self: flex-end;
+		padding: 1em;
+		width: 100%;
+		max-width: 300px;
+		color: c.$pure-white;
+		border: none;
+		border-radius: 8px;
+		background-color: c.$main-color;
+		cursor: pointer;
+		&::before {
+			background-color: c.$secondary-color;
+		}
+	}
+}
+
+//FOOTER
+
+.footer {
+	color: c.$pure-white;
+	background-color: c.$dark;
+
+	.wrapper {
+		padding: 6em 2em 2em;
+	}
+
+	&__box {
+		font-size: 1.4rem;
+	}
+
+	&__box-desktop {
+		display: none;
+	}
+
+	&__box-title {
+		margin-bottom: 1em;
+		font-size: 3rem;
+		text-transform: uppercase;
+	}
+
+	&__box-social {
+		margin: 2em 0 1em;
+	}
+
+	&__box-link {
+		color: c.$pure-white;
+		font-size: 3.6rem;
+		padding: 0 0.3em;
+		text-decoration: none;
+		transition: color 0.3s;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:hover {
+			color: c.$light-white;
+		}
+	}
+
+	&__bottom-text {
+		padding: 2em;
+		text-align: center;
+	}
+}
+
 // --------------------------
 // MEDIA
 // --------------------------
@@ -541,6 +649,38 @@ body {
 		&__card {
 			margin: 1em;
 			width: 45%;
+		}
+	}
+
+	.footer {
+		&__boxes {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__box-desktop {
+			display: block;
+		}
+		&__box {
+			margin: 0 2em;
+			width: 25%;
+
+			&:first-child {
+				width: 50%;
+			}
+		}
+
+		&__box-title {
+			font-size: 2.4rem;
+		}
+		&__box-list {
+			list-style: none;
+		}
+		&__box-list-item {
+			margin-bottom: 1em;
+			a {
+				color: c.$light-white;
+				text-decoration: none;
+			}
 		}
 	}
 }
