@@ -183,19 +183,25 @@ body {
 // DREAMS SECTION
 
 .dreams {
+
 	&__box {
 		display: flex;
 		flex-direction: column;
 		margin: 2em 0;
+		
+	
 	}
 
 	&__img {
 		width: 100%;
 		margin-bottom: 1em;
+		border-radius: 25px;
+		box-shadow: 6px 6px 6px #2e2e2e2e;
 	}
 
 	&__title {
 		margin-bottom: 0.5em;
+		
 	}
 	&__text {
 		font-size: 1.4rem;
@@ -351,6 +357,7 @@ body {
 		box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.18);
 		background-color: c.$pure-white;
 		overflow: hidden;
+		border-radius: 15px;
 
 		&-img {
 			width: 100%;
